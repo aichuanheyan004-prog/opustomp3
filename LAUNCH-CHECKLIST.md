@@ -6,8 +6,8 @@ This is the practical checklist for launching `opustomp3.com` as a low-cost SEO 
 
 - Confirm the home page opens directly to the converter.
 - Confirm every sitemap URL returns 200 on the static host.
-- Confirm `robots.txt` points to `https://opustomp3.com/sitemap.xml`.
-- Confirm canonical URLs use `https://opustomp3.com/`.
+- Confirm `robots.txt` points to `https://www.opustomp3.com/sitemap.xml`.
+- Confirm canonical URLs use `https://www.opustomp3.com/`.
 - Confirm the converter loads `assets/vendor/lame.all.js` locally.
 - Test conversion in Chrome or Edge with a real `.opus` file.
 
@@ -22,7 +22,7 @@ This is the practical checklist for launching `opustomp3.com` as a low-cost SEO 
 
 - Add the domain property in Google Search Console.
 - Verify DNS ownership.
-- Submit `https://opustomp3.com/sitemap.xml`.
+- Submit `https://www.opustomp3.com/sitemap.xml`.
 - Use URL Inspection for the home page and request indexing.
 
 ## First 30 Days

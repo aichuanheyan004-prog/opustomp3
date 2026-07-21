@@ -36,7 +36,7 @@ Any static host works:
 - Netlify
 - GitHub Pages
 
-Point `opustomp3.com` to the chosen host, then submit `https://opustomp3.com/sitemap.xml` in Google Search Console.
+Point `opustomp3.com` to the chosen host, then submit `https://www.opustomp3.com/sitemap.xml` in Google Search Console.
 
 ## Next low-cost growth steps
 

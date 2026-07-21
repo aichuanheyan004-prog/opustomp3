@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://opustomp3.com/sitemap.xml
+Sitemap: https://www.opustomp3.com/sitemap.xml
