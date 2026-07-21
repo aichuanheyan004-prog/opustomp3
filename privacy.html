@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy - OpusMP3</title>
+    <meta
+      name="description"
+      content="Privacy notes for OpusMP3, a browser-based Opus to MP3 converter."
+    />
+    <link rel="canonical" href="https://opustomp3.com/privacy" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">OM</span>
+        <span>OpusMP3</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/">Converter</a>
+        <a href="how-to-convert-opus-to-mp3">Guide</a>
+      </nav>
+    </header>
+    <main class="article-page">
+      <p class="eyebrow">Privacy</p>
+      <h1>Your audio stays in your browser</h1>
+      <p>
+        OpusMP3 is a static browser-based converter. The selected audio file is processed
+        locally by your browser and is not uploaded to a backend server by this site.
+      </p>
+      <h2>Files</h2>
+      <p>
+        Files you choose are used only for the current conversion session. Reloading or
+        closing the page clears the selected file and generated download URL.
+      </p>
+      <h2>Analytics</h2>
+      <p>
+        This MVP does not include analytics scripts. If analytics are added later, keep
+        them privacy-friendly and avoid collecting file names or audio contents.
+      </p>
+      <h2>Encoder script</h2>
+      <p>
+        The page includes a local copy of the lamejs MP3 encoder. The audio file itself
+        remains in the browser during conversion.
+      </p>
+      <div class="article-cta">
+        <a class="button primary" href="/">Back to converter</a>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <span>OpusMP3</span>
+      <span>opustomp3.com</span>
+    </footer>
+  </body>
+</html>

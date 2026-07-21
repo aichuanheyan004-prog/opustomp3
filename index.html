@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opus to MP3 Converter - Free, Private, Browser-Based</title>
+    <meta
+      name="description"
+      content="Convert Opus audio files to MP3 online for free. Your file stays in your browser, with no upload and no signup."
+    />
+    <link rel="canonical" href="https://opustomp3.com/" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Opus to MP3 Converter" />
+    <meta
+      property="og:description"
+      content="Free browser-based Opus to MP3 conversion. No upload, no signup."
+    />
+    <meta property="og:url" content="https://opustomp3.com/" />
+    <meta property="og:image" content="https://opustomp3.com/assets/codec-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f766e" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Opus to MP3 Converter",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any modern browser",
+        "url": "https://opustomp3.com/",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Convert Opus audio to MP3",
+          "Browser-side conversion",
+          "No file upload",
+          "No signup"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Opus to MP3 home">
+        <span class="brand-mark" aria-hidden="true">OM</span>
+        <span>OpusMP3</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#converter">Converter</a>
+        <a href="#guide">Guide</a>
+        <a href="#faq">FAQ</a>
+        <a href="privacy">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tool-hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Free online audio tool</p>
+          <h1 id="page-title">Convert Opus to MP3 in your browser</h1>
+          <p class="hero-text">
+            Drop an Opus audio file, choose MP3 quality, and download a playable MP3.
+            The conversion runs locally on your device, so your audio stays private.
+          </p>
+          <div class="hero-points" aria-label="Key benefits">
+            <span>No upload</span>
+            <span>No signup</span>
+            <span>Works on desktop browsers</span>
+          </div>
+        </div>
+
+        <section class="converter-panel" id="converter" aria-label="Opus to MP3 converter">
+          <div class="drop-zone" id="dropZone">
+            <input
+              id="fileInput"
+              type="file"
+              accept=".opus,.ogg,.oga,.webm,audio/ogg,audio/opus,audio/webm"
+            />
+            <div class="drop-visual" aria-hidden="true">
+              <img src="assets/codec-preview.png" alt="" />
+            </div>
+            <div class="drop-copy">
+              <strong>Choose or drop an Opus file</strong>
+              <span>.opus, .ogg, .oga, or WebM audio</span>
+            </div>
+            <button class="button primary" id="chooseButton" type="button">Select file</button>
+          </div>
+
+          <div class="settings-grid" aria-label="Conversion settings">
+            <label class="field" for="bitrate">
+              <span>MP3 quality</span>
+              <select id="bitrate">
+                <option value="128">128 kbps - small</option>
+                <option value="192" selected>192 kbps - balanced</option>
+                <option value="256">256 kbps - high</option>
+                <option value="320">320 kbps - maximum</option>
+              </select>
+            </label>
+            <label class="field" for="filename">
+              <span>Output name</span>
+              <input id="filename" type="text" placeholder="converted-audio" />
+            </label>
+          </div>
+
+          <div class="file-meta" id="fileMeta" aria-live="polite">
+            <span>No file selected</span>
+          </div>
+
+          <div class="progress-wrap" aria-label="Conversion progress">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+
+          <div class="actions">
+            <button class="button primary" id="convertButton" type="button" disabled>
+              Convert to MP3
+            </button>
+            <a class="button secondary is-disabled" id="downloadLink" href="#" download>Download MP3</a>
+          </div>
+
+          <p class="status" id="status" role="status">
+            Ready. Select an Opus file to start.
+          </p>
+
+          <audio class="preview-player" id="previewPlayer" controls hidden></audio>
+        </section>
+      </section>
+
+      <section class="content-band" id="guide">
+        <div class="section-heading">
+          <p class="eyebrow">Quick guide</p>
+          <h2>How to convert Opus to MP3</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <strong>Upload locally.</strong>
+            Choose a .opus, .ogg, .oga, or WebM Opus file from your computer.
+          </li>
+          <li>
+            <strong>Pick quality.</strong>
+            Use 192 kbps for a good balance, or 320 kbps when file size matters less.
+          </li>
+          <li>
+            <strong>Download MP3.</strong>
+            Save the converted file and use it in players, editors, or transcription tools.
+          </li>
+        </ol>
+      </section>
+
+      <section class="split-band">
+        <div>
+          <p class="eyebrow">Why convert</p>
+          <h2>Opus is efficient. MP3 is everywhere.</h2>
+        </div>
+        <div class="copy-stack">
+          <p>
+            Opus is a modern audio codec used by voice messages, web apps, podcasts,
+            and chat exports. It can sound good at low bitrates, especially for speech.
+          </p>
+          <p>
+            MP3 is older, but it is still accepted by many audio editors, CMS uploads,
+            car stereos, transcription products, and legacy media players. Converting
+            Opus to MP3 is often the fastest compatibility fix.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <div class="section-heading">
+          <p class="eyebrow">Common uses</p>
+          <h2>Built for practical Opus files</h2>
+        </div>
+        <div class="use-grid">
+          <article>
+            <h3>Voice messages</h3>
+            <p>Turn exported voice notes into MP3 files for playback, sharing, or archiving.</p>
+          </article>
+          <article>
+            <h3>Podcast clips</h3>
+            <p>Convert Opus recordings into MP3 before sending them to an editor or uploader.</p>
+          </article>
+          <article>
+            <h3>Transcription</h3>
+            <p>Create MP3 versions for speech-to-text tools that do not accept Opus input.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-band" id="faq">
+        <div class="section-heading">
+          <p class="eyebrow">Answers</p>
+          <h2>Opus to MP3 FAQ</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Does this converter upload my audio?</summary>
+            <p>
+              No. The file is decoded and encoded inside your browser. There is no server
+              upload in this static version of the site.
+            </p>
+          </details>
+          <details>
+            <summary>Why did my Opus file fail to convert?</summary>
+            <p>
+              Browser codec support varies. Try Chrome, Edge, or Firefox on desktop, and
+              make sure the file is a valid Opus audio file rather than a renamed download.
+            </p>
+          </details>
+          <details>
+            <summary>Will converting Opus to MP3 improve sound quality?</summary>
+            <p>
+              No. Conversion cannot restore quality that is not in the original file. It
+              improves compatibility, not fidelity.
+            </p>
+          </details>
+          <details>
+            <summary>Can I convert WhatsApp Opus voice notes?</summary>
+            <p>
+              Yes, many WhatsApp voice note exports use Opus audio and can be converted in
+              desktop browsers. See the <a href="whatsapp-opus-to-mp3">WhatsApp Opus guide</a>.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="link-band" aria-label="Related guides">
+        <a href="how-to-convert-opus-to-mp3">Detailed conversion guide</a>
+        <a href="convert-opus-to-mp3-without-upload">Convert without upload</a>
+        <a href="whatsapp-opus-to-mp3">WhatsApp Opus to MP3</a>
+        <a href="telegram-opus-to-mp3">Telegram Opus to MP3</a>
+        <a href="opus-vs-mp3">Opus vs MP3</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>OpusMP3</span>
+      <span>Free private audio conversion for opustomp3.com</span>
+    </footer>
+
+    <script src="assets/vendor/lame.all.js"></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
