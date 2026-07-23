@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Opus to MP3 Converter - Free, Private, Browser-Based</title>
+    <title>Opus to MP3 Converter Online - Free, Private, No Upload</title>
     <meta
       name="description"
-      content="Convert Opus audio files to MP3 online for free. Your file stays in your browser, with no upload and no signup."
+      content="Convert Opus audio files to MP3 online for free. Your audio stays in your browser with no upload, no signup, and support for common Opus containers."
     />
     <link rel="canonical" href="https://www.opustomp3.com/" />
     <meta name="robots" content="index,follow" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Opus to MP3 Converter" />
     <meta
       property="og:description"
-      content="Free browser-based Opus to MP3 conversion. No upload, no signup."
+      content="Free browser-based Opus to MP3 conversion with no upload, no signup, and private local processing."
     />
     <meta property="og:url" content="https://www.opustomp3.com/" />
     <meta property="og:image" content="https://www.opustomp3.com/assets/codec-preview.png" />
@@ -40,7 +40,8 @@
           "Convert Opus audio to MP3",
           "Browser-side conversion",
           "No file upload",
-          "No signup"
+          "No signup",
+          "Supports .opus, .ogg, .oga, and WebM Opus files"
         ]
       }
     </script>
@@ -63,14 +64,16 @@
       <section class="tool-hero" aria-labelledby="page-title">
         <div class="hero-copy">
           <p class="eyebrow">Free online audio tool</p>
-          <h1 id="page-title">Convert Opus to MP3 in your browser</h1>
+          <h1 id="page-title">Opus to MP3 Converter</h1>
           <p class="hero-text">
             Drop an Opus audio file, choose MP3 quality, and download a playable MP3.
-            The conversion runs locally on your device, so your audio stays private.
+            The conversion runs locally on your device, so your audio stays private
+            and does not need to be uploaded to a server.
           </p>
           <div class="hero-points" aria-label="Key benefits">
             <span>No upload</span>
             <span>No signup</span>
+            <span>Up to 100 MB</span>
             <span>Works on desktop browsers</span>
           </div>
         </div>
@@ -78,7 +81,7 @@
         <section class="converter-panel" id="converter" aria-label="Opus to MP3 converter">
           <div class="privacy-callout">
             <strong>Private by design</strong>
-            <span>Your audio never leaves your device.</span>
+            <span>Your audio is processed locally in your browser.</span>
           </div>
 
           <div class="drop-zone" id="dropZone">
@@ -92,7 +95,7 @@
             </div>
             <div class="drop-copy">
               <strong>Choose or drop an Opus file</strong>
-              <span>.opus, .ogg, .oga, or WebM audio</span>
+              <span>.opus, .ogg, .oga, or WebM audio up to 100 MB</span>
             </div>
             <button class="button primary" id="chooseButton" type="button">Select file</button>
           </div>
@@ -143,7 +146,7 @@
         </div>
         <ol class="steps">
           <li>
-            <strong>Upload locally.</strong>
+            <strong>Choose locally.</strong>
             Choose a .opus, .ogg, .oga, or WebM Opus file from your computer.
           </li>
           <li>
@@ -155,6 +158,29 @@
             Save the converted file and use it in players, editors, or transcription tools.
           </li>
         </ol>
+      </section>
+
+      <section class="content-band">
+        <div class="section-heading">
+          <p class="eyebrow">Supported files</p>
+          <h2>Convert common Opus audio containers</h2>
+        </div>
+        <div class="copy-stack">
+          <p>
+            Opus audio can appear as a plain <strong>.opus</strong> file, inside an
+            <strong>.ogg</strong> or <strong>.oga</strong> container, or inside a
+            WebM audio export. OpusMP3 accepts those common file types and creates
+            a standard MP3 download that is easier to open in older players, editors,
+            CMS upload forms, and transcription tools.
+          </p>
+          <p>
+            Because conversion happens in the browser, the practical limit depends on
+            your device memory and browser audio support. This version accepts files up
+            to 100 MB and works best on desktop Chrome, Edge, or Firefox. Short voice
+            notes usually convert quickly; long recordings may take more time because
+            the decoding and MP3 encoding work is done on your own device.
+          </p>
+        </div>
       </section>
 
       <section class="split-band">
@@ -206,7 +232,24 @@
             <summary>Does this converter upload my audio?</summary>
             <p>
               No. The file is decoded and encoded inside your browser. There is no server
-              upload in this static version of the site.
+              upload in this static version of the site, and the selected audio is not sent
+              to OpusMP3.
+            </p>
+          </details>
+          <details>
+            <summary>What file types are supported?</summary>
+            <p>
+              You can choose .opus, .ogg, .oga, and WebM audio files that contain Opus
+              audio. Browser codec support still matters, so a valid Opus file may work
+              in one desktop browser and fail in another.
+            </p>
+          </details>
+          <details>
+            <summary>What is the maximum Opus file size?</summary>
+            <p>
+              The current limit is 100 MB. Browser-side conversion is private, but it uses
+              your device memory, so smaller voice notes and medium recordings are the best
+              fit for this converter.
             </p>
           </details>
           <details>
@@ -239,6 +282,7 @@
         <a href="whatsapp-opus-to-mp3">WhatsApp Opus to MP3</a>
         <a href="telegram-opus-to-mp3">Telegram Opus to MP3</a>
         <a href="opus-vs-mp3">Opus vs MP3</a>
+        <a href="privacy">Browser-local privacy</a>
       </section>
     </main>
 

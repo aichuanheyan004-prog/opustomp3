@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Opus vs MP3 - Which Format Should You Use?</title>
+    <title>Opus vs MP3 - Compatibility, Quality, and File Size</title>
     <meta
       name="description"
-      content="Compare Opus and MP3 for compatibility, file size, speech, music, and web use."
+      content="Compare Opus and MP3 for compatibility, quality, file size, speech, music, web use, and when it makes sense to convert Opus to MP3."
     />
     <link rel="canonical" href="https://www.opustomp3.com/opus-vs-mp3" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -30,26 +30,89 @@
       <h1>Opus vs MP3</h1>
       <p>
         Opus and MP3 are both lossy audio formats, but they solve different problems.
-        Opus is modern and efficient. MP3 is old, predictable, and widely supported.
+        Opus is modern and efficient, especially for speech and low-bitrate audio. MP3 is
+        older, predictable, and supported almost everywhere. The best format depends on
+        whether you care more about efficiency or compatibility.
       </p>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Format</th>
+            <th>Best for</th>
+            <th>Main tradeoff</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Opus</td>
+            <td>Voice messages, web audio, streaming, real-time communication, small speech files</td>
+            <td>Not accepted by every older editor, player, upload form, or transcription service</td>
+          </tr>
+          <tr>
+            <td>MP3</td>
+            <td>Compatibility, sharing, publishing, legacy players, broad tool support</td>
+            <td>Less efficient than Opus at many bitrates and cannot improve the original recording</td>
+          </tr>
+        </tbody>
+      </table>
+
       <h2>Use Opus when</h2>
       <ul>
         <li>You want small files for speech, streaming, or real-time communication.</li>
         <li>Your target apps already support Opus playback.</li>
-        <li>You are storing web-first recordings or chat audio.</li>
+        <li>You are storing web-first recordings, chat audio, or voice messages.</li>
+        <li>You care about efficient compression more than universal playback.</li>
       </ul>
+
       <h2>Use MP3 when</h2>
       <ul>
         <li>You need broad compatibility with older players, editors, and upload forms.</li>
         <li>You are sending files to people who may not know what Opus is.</li>
-        <li>A transcription or publishing tool rejects Opus input.</li>
+        <li>A transcription, CMS, podcast, or publishing tool rejects Opus input.</li>
+        <li>You need a predictable format for archiving or sharing across many devices.</li>
       </ul>
+
+      <h2>Quality and file size</h2>
+      <p>
+        Opus usually gives better speech quality at low bitrates. That is why it is common
+        in voice notes and messaging apps. MP3 files may be larger at similar perceived
+        quality, but the tradeoff is often worth it when the receiving app only accepts MP3.
+      </p>
+      <p>
+        If you convert an Opus file to MP3, use a bitrate that fits the source. For speech,
+        128 kbps is often enough. For mixed audio or files you plan to edit, 192 kbps or
+        256 kbps is safer. A 320 kbps MP3 will be larger, but it will not recreate detail
+        missing from the original Opus file.
+      </p>
+
+      <h2>Practical examples</h2>
+      <p>
+        Keep Opus when you are storing chat audio for yourself, building a web-first audio
+        workflow, or sharing with apps that already support Opus. Convert to MP3 when a
+        client asks for a familiar format, a transcription tool rejects the upload, a CMS
+        only accepts MP3, or an older player cannot open the original file.
+      </p>
+      <p>
+        For archives, it can be useful to keep both files: the original Opus file as the
+        source, and the converted MP3 as the compatibility copy. That way you do not lose
+        the efficient original while still having a file that works almost everywhere.
+      </p>
+
       <h2>Should you convert Opus to MP3?</h2>
       <p>
-        Convert only when you need compatibility. MP3 conversion creates a new lossy
-        file, so it cannot improve the original sound. It simply makes the audio easier
-        to use in more places.
+        Convert only when you need compatibility. MP3 conversion creates a new lossy file,
+        so it cannot improve the original sound. It simply makes the audio easier to use in
+        more places, especially for transcription, editing, uploading, or sharing.
       </p>
+
+      <div class="article-links" aria-label="Related Opus and MP3 guides">
+        <a href="how-to-convert-opus-to-mp3">How to convert Opus to MP3</a>
+        <a href="convert-opus-to-mp3-without-upload">Private no-upload conversion</a>
+        <a href="whatsapp-opus-to-mp3">WhatsApp Opus voice notes</a>
+        <a href="telegram-opus-to-mp3">Telegram Opus voice messages</a>
+      </div>
+
       <div class="article-cta">
         <h2>Need an MP3 copy?</h2>
         <a class="button primary" href="/">Open the converter</a>

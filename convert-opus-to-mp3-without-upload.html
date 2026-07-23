@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Convert Opus to MP3 Without Upload - OpusMP3</title>
+    <title>Convert Opus to MP3 Without Upload - Private Browser Tool</title>
     <meta
       name="description"
-      content="Convert Opus to MP3 without uploading private audio. This browser-based converter runs locally on your device."
+      content="Convert Opus to MP3 without uploading private audio. OpusMP3 runs locally in your browser, explains the limits, and supports common Opus files."
     />
     <link rel="canonical" href="https://www.opustomp3.com/convert-opus-to-mp3-without-upload" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -31,25 +31,69 @@
       <p>
         Many online audio converters require you to upload a file before they process it.
         That can be uncomfortable when the file is a voice message, an interview, a work
-        recording, or any private audio.
+        recording, a meeting note, or any audio that was never meant to leave your device.
       </p>
       <p>
-        OpusMP3 is designed as a static browser tool. It reads the selected audio file
+        OpusMP3 is designed as a static browser tool. It reads the selected Opus audio file
         locally, decodes it in your browser, encodes an MP3 copy, and gives you a download
-        link without sending the audio to a backend server.
+        link without sending the audio to a backend server. That makes it a practical choice
+        when you want a quick compatibility copy but do not want to hand the source file to
+        another service.
       </p>
+
+      <div class="article-note">
+        <p>
+          Browser-local conversion means the privacy advantage comes from the site design:
+          the audio processing happens on your device. You can still use normal care with
+          sensitive files, such as closing unrelated tabs and avoiding public computers.
+        </p>
+      </div>
+
+      <h2>How no-upload conversion works</h2>
+      <p>
+        When you choose a file, the browser loads the audio into local memory. The Web Audio
+        API decodes the Opus stream, then the local MP3 encoder creates an MP3 blob. The
+        download button points to that temporary browser-generated file. Reloading or closing
+        the page clears the selected file and generated download URL.
+      </p>
+
       <h2>When this is the right choice</h2>
       <ul>
-        <li>You only need a quick MP3 copy of a small or medium Opus file.</li>
-        <li>You do not want to upload private audio to a third-party service.</li>
+        <li>You need a quick MP3 copy of a small or medium Opus file.</li>
+        <li>You do not want to upload private audio to a third-party converter.</li>
+        <li>You are converting WhatsApp, Telegram, meeting, or app-exported voice audio.</li>
         <li>You are using a modern desktop browser with local audio decoding support.</li>
       </ul>
-      <h2>Limitations</h2>
+
+      <h2>Supported files and limits</h2>
       <p>
-        Very large audio files may be slow because the work happens on your device. Some
-        mobile browsers also limit local audio decoding. For best results, use Chrome,
-        Edge, or Firefox on desktop.
+        The converter accepts .opus, .ogg, .oga, and WebM audio files that contain Opus
+        audio. The current file-size limit is 100 MB. Very large files may be slow or fail
+        because the work happens on your device rather than on a server with more memory.
+        For long recordings, try a desktop browser and close other memory-heavy apps first.
       </p>
+      <p>
+        The output file name is generated in the browser as well. You can edit the output
+        name before conversion, and the downloaded MP3 will use that local name. The site
+        does not need to store a copy of the original file or the converted file to provide
+        the download.
+      </p>
+
+      <h2>When an uploaded converter may be better</h2>
+      <p>
+        If you have a very large batch of audio files, need server-side automation, or need
+        advanced audio repair, a dedicated desktop app or professional audio workflow may be
+        more suitable. OpusMP3 is intentionally focused on a low-friction, private, browser
+        conversion for common Opus files.
+      </p>
+
+      <div class="article-links" aria-label="Related private conversion guides">
+        <a href="how-to-convert-opus-to-mp3">Read the full conversion guide</a>
+        <a href="privacy">Privacy details for OpusMP3</a>
+        <a href="whatsapp-opus-to-mp3">WhatsApp Opus to MP3</a>
+        <a href="telegram-opus-to-mp3">Telegram Opus to MP3</a>
+      </div>
+
       <div class="article-cta">
         <h2>Try private Opus conversion</h2>
         <a class="button primary" href="/">Open converter</a>

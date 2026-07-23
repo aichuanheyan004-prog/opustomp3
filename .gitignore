@@ -4,3 +4,7 @@ node_modules/
 dist/
 .vercel/
 .netlify/
+
+# Local methodology corpus and development-only audit utilities.
+research/
+tools/
