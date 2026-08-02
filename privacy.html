@@ -9,6 +9,12 @@
       content="Privacy notes for OpusMP3, a browser-based Opus to MP3 converter that processes selected audio locally without backend file uploads."
     />
     <link rel="canonical" href="https://www.opustomp3.com/privacy" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="OpusMP3 Privacy" />
+    <meta property="og:description" content="How OpusMP3 processes selected audio locally in the browser without a backend file upload." />
+    <meta property="og:url" content="https://www.opustomp3.com/privacy" />
+    <meta property="og:image" content="https://www.opustomp3.com/assets/codec-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -52,8 +58,12 @@
       </p>
       <h2>Encoder script</h2>
       <p>
-        The page includes a local copy of the lamejs MP3 encoder. The audio file itself
-        remains in the browser during conversion.
+        The page includes an unmodified, separately loaded copy of the
+        <a href="https://github.com/zhuker/lamejs">lamejs MP3 encoder</a>, which is based
+        on the <a href="https://lame.sourceforge.io/">LAME project</a> and distributed
+        under the LGPL. The deployed repository includes its notice at
+        <code>/assets/vendor/lamejs-LICENSE</code>. The audio file itself remains in the
+        browser during conversion.
       </p>
       <h2>Practical limits</h2>
       <p>

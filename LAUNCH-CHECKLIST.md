@@ -14,8 +14,8 @@ This is the practical checklist for launching `opustomp3.com` as a low-cost SEO 
 ## DNS And Hosting
 
 - Deploy the folder to Cloudflare Pages, Vercel, Netlify, or GitHub Pages.
-- Add `opustomp3.com` as the production domain.
-- Redirect `www.opustomp3.com` to `opustomp3.com`.
+- Add `www.opustomp3.com` as the canonical production domain.
+- Redirect `opustomp3.com` to `https://www.opustomp3.com/`.
 - Force HTTPS.
 
 ## Search Console
